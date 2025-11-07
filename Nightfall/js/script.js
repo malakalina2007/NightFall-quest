@@ -22,13 +22,9 @@ function checkLogin() {
     console.log("Checking login status...");
 
     let userId = sessionStorage.getItem("id");
-    if (!userId) {
-        console.log("User not logged in. Redirecting to login page...");
-        window.location.replace("../login.html"); // Ensure correct path
-    } else {
-        console.log("User is logged in with ID:", userId);
-    }
+  
 }
 
 // Run checkLogin() only after the DOM has loaded
 document.addEventListener("DOMContentLoaded", checkLogin);
+
